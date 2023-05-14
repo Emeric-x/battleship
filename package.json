@@ -8,8 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build && next export && touch out/.nojekyll",
-    "deploy": "gh-pages -d .next"
+    "predeploy": "npm run build && next export",
+    "deploy": "gh-pages -d out" 
   },
   "dependencies": {
     "@chakra-ui/react": "^2.5.5",

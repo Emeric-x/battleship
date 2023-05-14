@@ -9,7 +9,11 @@ const nextConfig = {
         destination: 'https://battleship-api.000webhostapp.com/:path*'
       }
     ]
-  }
+  },
+  images: {
+    loader: 'imgix',
+    path: '/',
+  },
 }
 
 module.exports = nextConfig
