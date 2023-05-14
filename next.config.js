@@ -6,9 +6,7 @@ const nextConfig = {
     return [
       {
         source: '/backend/:path*',
-        //destination: 'http://localhost/akagami/Github/projet-react/inge-web-projet-booty-byte-er/backend/:path*'
-        destination: 'http://localhost/inge-web-projet-booty-byte-er/backend/:path*'
-        //destination: 'http://localhost/projet/inge-web-projet-booty-byte-er/backend/:path*'
+        destination: 'https://battleship-api.000webhostapp.com/:path*'
       }
     ]
   }

@@ -13,13 +13,13 @@ export function MusicButton(props: MusicButtonProps) {
   const defaultVolume = 0.35; // ajuste le volume de base
 
   useEffect(() => {
-    theme.current.volume = defaultVolume;
+    //theme.current.volume = defaultVolume;
   }, []);
 
   const handleClick = () => {
     setIsClicked(!isClicked);
     setIsMuted(!isMuted);
-    theme.current.volume = isMuted ? defaultVolume : 0;
+    //theme.current.volume = isMuted ? defaultVolume : 0;
   };
 
   return (
