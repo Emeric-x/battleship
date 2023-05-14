@@ -1,0 +1,224 @@
+.all{
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: auto;
+  background-color: grey;
+  opacity: 0.96;
+  background-image: url("/background_blurred.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment:scroll;  
+  overflow: hidden;
+  height: 100vh;
+  } 
+
+  .titlebox {
+    display: flex;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px;
+  }
+  
+  .p1 {
+    position: absolute;
+    top:10px;
+    height: 40px;
+    text-align: center;
+    padding-top: 2px;
+    padding-left: 12px;
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 10px/10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 10px;
+    font-size: 25px;  
+    text-transform: uppercase;
+  }
+
+.globalGrid {
+  display: grid;
+  grid-template-columns: 5;
+  grid-template-rows: 4;
+  column-gap: 0px;
+  row-gap: 0px;
+  text-align: center;
+}
+
+.myGrid {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.opponentGrid {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 20px);
+  grid-template-rows: repeat(10, 20px);
+  gap: 10px;
+}
+
+.column2 {
+  display: grid;
+  background-color: rgba(255, 255, 255, 0.53);
+  padding: 15px 25px 25px 15px;
+  margin-left: 30px;
+  grid-column: 2;
+  grid-row: 1;
+  border-radius: 15px/15px;
+}
+
+.column4 {
+  display: grid;
+  background-color: rgba(255, 255, 255, 0.53);
+  padding: 15px 25px 25px 15px;
+  margin-left: 30px;
+  grid-column: 2;
+  grid-row: 1;
+  border-radius: 15px/15px;
+}
+
+.myMapTitle {
+  grid-column: 2;
+  grid-row: 3;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myMapTitle p {
+  width: 150px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.53);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-left: 30px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.opponentMapTitle {
+  grid-column: 4;
+  grid-row: 3;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opponentMapTitle p {
+  width: 150px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.53);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-left: 30px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+
+.clickZone {
+  min-width: 30px;
+  min-height: 30px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0.5px solid #747474;
+}
+
+.OpponentClickZone {
+  cursor: crosshair;
+  min-width: 30px;
+  min-height: 30px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0.5px solid #747474;
+}
+
+.ship {
+  background-color: #ff9900;
+  text-align: center;
+  color: rgba(21, 21, 21, 0.806);
+  padding-bottom: 4.7px;
+}
+
+.shipTouched{
+  background: #ff9900;
+  background-size: cover;
+  height: 28.5px;
+  width: 29px;
+}
+
+.shipTouched video {
+  height: 28.5px;
+  width: 29px;
+}
+
+.shipMissed audio {
+  display: none;
+}
+
+.missedShot {
+  background-color: yellow;
+}
+
+.OpponentDisabledClickZone {
+  min-width: 30px;
+  min-height: 30px;
+  border: 0.5px solid #747474;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.OpponentTouchedClickZone {
+  min-width: 30px;
+  min-height: 30px;
+  background-color: rgb(245, 68, 37);
+  border: 0.5px solid #747474;
+  pointer-events: none;
+  cursor: not-allowed;
+  
+}
+
+.OpponentTurn {
+  min-width: 30px;
+  min-height: 30px;
+  background-color: rgba(81, 81, 81, 0.767);
+  border: 0.5px solid #747474;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.yourTurnInformation {
+  background-color: #ff9900;
+  text-align: center;
+  padding: 3px 34px 3px 34px;
+  position: absolute;
+  top:70px;
+  border-radius: 6px;
+  font-weight: 400; 
+}
+
+.opponentTurnInformation {
+  background-color: rgba(255, 255, 255, 0.65);
+  text-align: center;
+  padding: 3px 7px 3px 7px;
+  position: absolute;
+  top:70px;
+  border-radius: 6px;
+  font-weight: 400; 
+
+}

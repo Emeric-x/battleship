@@ -1,0 +1,24 @@
+
+.div1 {
+    height: 149px;
+    border-radius: 15px/15px;
+    padding: 15px;
+    padding-top: 25px;
+    background-color: rgba(255, 255, 255, 0.53);
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .rulesTitle{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18x;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .rulesDiv{
+    padding-top: 5px;
+    font-size: 14px;
+  }
+  
